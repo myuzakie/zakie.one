@@ -1,18 +1,12 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import { Bookmark, Heart, MessageCircle, Share2 } from 'lucide-react'
 import Image from 'next/image'
 
 interface InstagramPreviewCardProps {
-  itemVariants: {
-    initial?: object;
-    animate?: object;
-    exit?: object;
-    transition?: object;
-    [key: string]: object | undefined;
-  }
-  className?: string
+  itemVariants: Variants;
+  className?: string;
 }
 
 export default function InstagramPreviewCard({

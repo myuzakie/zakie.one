@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import HeroSection from './(sections)/hero'
+import AboutSection from './(sections)/about'
 
 // Page-specific metadata
 export const metadata: Metadata = {
@@ -18,8 +19,10 @@ export default function HomePage() {
       {/* Hero Section */}
       <HeroSection />
 
+      {/* About Section */}
+      <AboutSection />
+
       {/* Future sections will be added here */}
-      {/* <AboutSection /> */}
       {/* <ProjectsSection /> */}
       {/* <ContactSection /> */}
     </main>

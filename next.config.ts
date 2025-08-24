@@ -10,7 +10,22 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-  domains: ['framerusercontent.com'],
+    domains: ['framerusercontent.com'],
+  },
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: [
+          {
+            loader: '@svgr/webpack',
+            options: {
+              icon: true,
+            },
+          },
+        ],
+        as: '*.js',
+      },
+    },
   },
 };
 
